@@ -95,6 +95,6 @@ public class Date {
                 tempday++; 
                 break;
         }
-        return "Date is : "+tempday+" / "+ tempmonth +" / "+tempyear +" leapyear ="+leapYear;
+        return "Tommorrow is : "+tempday+" / "+ tempmonth +" / "+tempyear +" leapyear = "+leapYear;
     }
 }
