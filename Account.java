@@ -28,7 +28,7 @@ public class Account{
 		this.balence += amount;
 		return this.balence;
 	}
-	
+	//transfer(Accont other,int amount){if else}
 	public int debit (int amount){
 		if (amount <= this.balence){
 			this.balence -= amount;
