@@ -34,11 +34,21 @@ public class Account{
 			this.balence -= amount;
 		}
 		else{
-			System.out.println("Amount exceeded balance")
+			System.out.println("Amount exceeded balance");
 		}
-		return this.balance;
+		return this.balence;
+	}
+
+	public void transfer (Account otherAccount , int amount){
+		if (amount<=this.balence){
+			this.balence-= amount;
+			otherAccount.balence +=  amount;
+		}
+		else {
+			System.err.println("Amount exceeded balance");
+		}
 	}
 	public String toString(){
-		return 
+		return "id : "+getId()+" \nName : "+getName()+" \nBalaence : "+getBalance();
 	}
 }
